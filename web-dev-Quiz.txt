@@ -40,12 +40,38 @@ D responds with website E
   ANS :-> Browser sends request to Recursive DNS Resolver
 
  Recursive DNS Resolver queries Root Name Server
-Root Name Server responds with Top Level Domain Name Server Ip address 
-Recursive DNS Resolver queries Top Level Domain Name Server
-Top Level Domain Name Server responds withAuthoritative Name Server ip address 
-to Recursive DNS Resolver queries Authoritative Name Server
-Authoritative Name Server responds with website IP Address
+  Root Name Server responds with Top Level Domain Name Server Ip address 
+  Recursive DNS Resolver queries Top Level Domain Name Server
+  Top Level Domain Name Server responds withAuthoritative Name Server ip address 
+  to Recursive DNS Resolver queries Authoritative Name Server
+  Authoritative Name Server responds with website IP Address
 
 
 
 
+4. what gets logged?
+
+  1. setTimeout(()=> console.log(1));
+
+  2. Promise.resolve().then(()=> console.log(2));
+
+  3. Promise.resolve().then(()=> setTimeout(()=> console.log(3)));
+
+  4. new Promise.resolve(console.log(4));
+
+  5. setTimeout(()=> console.log(5));
+
+  ANS :-> 4 2 1 5 3
+
+5. Match the resource hinta with their definitions
+
+  A. DNS              1. prioritizes fetching of crucial resources needed for the current navigation
+  B. preconnect       2. performs domain name resolution in the background
+  C. prefetch         3. proactively performs DNS resolution and TCP/TLS handshake
+  D. preload          4. requests non-critical resources in the background
+
+  ANS :-> 
+  A. DNS               performs domain name resolution in the background
+  B. preconnect        proactively performs DNS resolution and TCP/TLS handshake
+  C. prefetch          requests non-critical resources in the background
+  D. preload           prioritizes fetching of crucial resources needed for the current navigation
