@@ -1,0 +1,51 @@
+1 .put the secript in the right order of execution 
+
+ A.   <script async src="async1.js"></script>  Load in 300ms 
+ B.   <script defer src="defer1.js"></script>   Load in 200ms 
+ C.   <script defer src="defer2.js"></script>   Load in 300ms 
+ D.   <script async src="async2.js"></script>   Load in 50ms 
+ E.   <script async defer src="asyncdefer1.js"></script>   Load in 60ms 
+    
+ ANS =>   D, E, A, B, C
+
+in E option case if there are both attribute it always async
+
+2. Which statment are true?
+
+  A. the render tree contains all the elements from the DOM and CSSOM combined.
+  B. compositing is the process of separating layers based on z-index, which are then combined to form the final image displayed on the screen.
+  C. is the layout process assigns colors and images to the visual elements in the reder tree.
+  D. the compositing process happens on the compositor thread.
+  E. elements that aren't visible on the page. So for example with display hidden, are not part of the dom tree.
+
+  ANS :-> D
+
+3. Fill in the correct terms
+
+Browser sends request to A 
+
+A queries B 
+B responds with C Ip address 
+A queries C
+C responds with D ip address 
+A queries D 
+D responds with website E 
+
+1. Recursive DNS Resolver
+2. Root Name Server
+3. IP Address 
+4. Top Level Domain Name Server
+5. Authoritative Name Server
+
+  ANS :-> Browser sends request to Recursive DNS Resolver
+
+ Recursive DNS Resolver queries Root Name Server
+Root Name Server responds with Top Level Domain Name Server Ip address 
+Recursive DNS Resolver queries Top Level Domain Name Server
+Top Level Domain Name Server responds withAuthoritative Name Server ip address 
+to Recursive DNS Resolver queries Authoritative Name Server
+Authoritative Name Server responds with website IP Address
+
+
+
+
